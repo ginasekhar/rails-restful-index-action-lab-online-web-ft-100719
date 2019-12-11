@@ -1,0 +1,14 @@
+
+<h4> Student: </h4>
+<p><%=@student.first_name @student.last_name%> </p>
+
+
+<% fullname = @student.first_name + " " + student.last_name %>
+<%= link_to (fullname, @student) %>
+
+<br>
+
+<form method="POST" action="/practice_logs/<%= @practice_log.id %>/delete">
+    <input type="hidden" id="hidden" name="_method" value="DELETE">
+    <input type="submit" name='Delete", id='delete">
+</form>
